@@ -6,11 +6,12 @@
 
 镜像构建指令
 docker build -t xampp .
+
 容器启动指令
 docker run -d --name xampp_1 -p 80:80  -v /opt/lampp/htdocs/:/opt/lampp/htdocs/ -v /data/logs:/data/logs xampp
 
 路径说明
-/opt/lampp/htdocs/      为代码的根目录,将程序代码上传至此处即可;
+/opt/lampp/htdocs/              为代码的根目录,将程序代码上传至此处即可;
 /data/logs                      为程序运行日志路径;
 
 额外说明:
